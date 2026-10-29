@@ -3,7 +3,7 @@
 
 # Rok
 
-<div class="lead">A statically-typed, compiled language with a rich library.<br>Closed sum types, ahead-of-time compilation, a package registry, a REPL, and Jupyter.</div>
+<div class="lead">A compiled language that tells you what to write.<br>Closed sum types, ahead-of-time compilation, a rich library, a package registry, a REPL, and Jupyter.</div>
 <div class="cta"><a class="primary" href="docs:learn/01-getting-started.html">Get started</a><a href="play:">Try it online</a><a href="docs:index.html">Docs</a></div>
 <div class="install"><pre><code>curl -fsSL https://rok-lang.org/<wbr>install.sh | sh</code></pre><p>macOS and Linux. Windows and archives: <a href="download.html">Download</a>.</p></div>
 <div class="term" aria-label="A terminal: rok new hello, then rok run prints Hello, world!" role="img">

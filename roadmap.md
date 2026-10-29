@@ -11,9 +11,12 @@
 <header><span class="rm-ver">0.1.5</span><span class="rm-pill now">In progress</span></header>
 <h3>Polish after the REPL release</h3>
 <ul>
+<li>Coloured output for <code>rok</code>, <code>rokc</code> and the installers, plain text where colour is off; help for each command; a "did you mean" for unknown commands and options (<a href="https://github.com/rok-lang/rok/issues/236">#236</a>, <a href="https://github.com/rok-lang/rok/issues/239">#239</a>, <a href="https://github.com/rok-lang/rok/issues/240">#240</a>)</li>
+<li>Errors that say what to write: the method you meant, how to get a value out of <code>T | none</code>, the arms a <code>match</code> misses, a mismatch underlined at the value (<a href="https://github.com/rok-lang/rok/issues/246">#246</a> to <a href="https://github.com/rok-lang/rok/issues/250">#250</a>)</li>
+<li>Build output that says what happened, and commands outside a package that no longer run silently; <code>rok toolchain update</code> warns when another <code>rok</code> comes first on PATH (<a href="https://github.com/rok-lang/rok/issues/241">#241</a> to <a href="https://github.com/rok-lang/rok/issues/245">#245</a>, <a href="https://github.com/rok-lang/rok/issues/223">#223</a>, <a href="https://github.com/rok-lang/rok/issues/232">#232</a> to <a href="https://github.com/rok-lang/rok/issues/235">#235</a>)</li>
+<li>The language server: completion, hover and go to definition into the standard library, quick fixes, signature help (<a href="https://github.com/rok-lang/rok/issues/252">#252</a> to <a href="https://github.com/rok-lang/rok/issues/254">#254</a>)</li>
 <li>The REPL: no <code>%</code> marker after output without a newline, Jupyter cell numbers that match <code>In [N]</code>, <code>:save</code> that loads back (<a href="https://github.com/rok-lang/rok/issues/222">#222</a>, <a href="https://github.com/rok-lang/rok/issues/224">#224</a>, <a href="https://github.com/rok-lang/rok/issues/229">#229</a>)</li>
-<li><code>rok toolchain update</code> warns when another <code>rok</code> comes first on PATH; <code>rok fmt</code> and other commands outside a package say what they did instead of running silently (<a href="https://github.com/rok-lang/rok/issues/223">#223</a>, <a href="https://github.com/rok-lang/rok/issues/232">#232</a> to <a href="https://github.com/rok-lang/rok/issues/235">#235</a>)</li>
-<li>ROKON fixes, a per-case timeout for the wasm corpus, current release docs (<a href="https://github.com/rok-lang/rok/issues/226">#226</a>, <a href="https://github.com/rok-lang/rok/issues/227">#227</a>, <a href="https://github.com/rok-lang/rok/issues/225">#225</a>)</li>
+<li>Index and key panics that name the value, ROKON fixes, a per-case timeout for the corpus, current release docs (<a href="https://github.com/rok-lang/rok/issues/251">#251</a>, <a href="https://github.com/rok-lang/rok/issues/226">#226</a>, <a href="https://github.com/rok-lang/rok/issues/227">#227</a>, <a href="https://github.com/rok-lang/rok/issues/225">#225</a>)</li>
 </ul>
 <a class="rm-link" href="https://github.com/rok-lang/rok/milestone/5">Milestone 0.1.5</a>
 </section>
@@ -22,15 +25,6 @@
 ## Next
 
 <div class="rm">
-<section class="rm-card next">
-<header><span class="rm-ver">0.1.6</span><span class="rm-pill next">Next</span></header>
-<h3>A backend interface</h3>
-<ul>
-<li>One documented boundary from rok-mir to code generation, so LLVM, the native backend and a future one plug in the same way (<a href="https://github.com/rok-lang/rok/issues/199">#199</a>, <a href="https://github.com/rok-lang/rok/issues/200">#200</a>)</li>
-<li>Every backend checked against the corpus through it (<a href="https://github.com/rok-lang/rok/issues/201">#201</a>)</li>
-</ul>
-<a class="rm-link" href="https://github.com/rok-lang/rok/milestone/8">Milestone 0.1.6</a>
-</section>
 <section class="rm-card next">
 <header><span class="rm-ver">0.2.0</span><span class="rm-pill next">Next</span></header>
 <h3>First breaking release</h3>
@@ -47,13 +41,23 @@
 
 <div class="rm">
 <section class="rm-card later">
-<header><span class="rm-ver">0.2.x</span><span class="rm-pill later">Later</span></header>
+<header><span class="rm-ver">0.2.1</span><span class="rm-pill later">Later</span></header>
 <h3>Variadic functions</h3>
 <ul>
 <li><code>...T</code> and <code>...any</code> parameters, list and tuple spreads (<a href="https://github.com/rok-lang/rok/issues/4">#4</a>)</li>
 <li>Formatting stays with f-strings: no positional <code>print("{}", x)</code></li>
 </ul>
 <a class="rm-link" href="https://github.com/rok-lang/rok/milestone/4">Milestone 0.2.1</a>
+</section>
+<section class="rm-card later">
+<header><span class="rm-ver">0.2.2</span><span class="rm-pill later">Later</span></header>
+<h3>A backend interface</h3>
+<ul>
+<li>One documented boundary from rok-mir to code generation, so LLVM, the native backend and a future one plug in the same way (<a href="https://github.com/rok-lang/rok/issues/199">#199</a>, <a href="https://github.com/rok-lang/rok/issues/200">#200</a>)</li>
+<li>Every backend checked against the corpus through it (<a href="https://github.com/rok-lang/rok/issues/201">#201</a>)</li>
+<li>The front end splits out the same way, so the language server builds for wasm and runs in the browser (<a href="https://github.com/rok-lang/rok/issues/259">#259</a>)</li>
+</ul>
+<a class="rm-link" href="https://github.com/rok-lang/rok/milestone/8">Milestone 0.2.2</a>
 </section>
 <section class="rm-card later">
 <header><span class="rm-ver">Unscheduled</span><span class="rm-pill later">Later</span></header>

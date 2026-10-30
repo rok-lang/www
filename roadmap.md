@@ -8,25 +8,7 @@
 
 <div class="rm">
 <section class="rm-card now">
-<header><span class="rm-ver">0.1.5</span><span class="rm-pill now">In progress</span></header>
-<h3>Polish after the REPL release</h3>
-<ul>
-<li>Coloured output for <code>rok</code>, <code>rokc</code> and the installers, plain text where colour is off; help for each command; a "did you mean" for unknown commands and options (<a href="https://github.com/rok-lang/rok/issues/236">#236</a>, <a href="https://github.com/rok-lang/rok/issues/239">#239</a>, <a href="https://github.com/rok-lang/rok/issues/240">#240</a>)</li>
-<li>Errors that say what to write: the method you meant, how to get a value out of <code>T | none</code>, the arms a <code>match</code> misses, a mismatch underlined at the value (<a href="https://github.com/rok-lang/rok/issues/246">#246</a> to <a href="https://github.com/rok-lang/rok/issues/250">#250</a>)</li>
-<li>Build output that says what happened, and commands outside a package that no longer run silently; <code>rok toolchain update</code> warns when another <code>rok</code> comes first on PATH (<a href="https://github.com/rok-lang/rok/issues/241">#241</a> to <a href="https://github.com/rok-lang/rok/issues/245">#245</a>, <a href="https://github.com/rok-lang/rok/issues/223">#223</a>, <a href="https://github.com/rok-lang/rok/issues/232">#232</a> to <a href="https://github.com/rok-lang/rok/issues/235">#235</a>)</li>
-<li>The language server: completion, hover and go to definition into the standard library, quick fixes, signature help (<a href="https://github.com/rok-lang/rok/issues/252">#252</a> to <a href="https://github.com/rok-lang/rok/issues/254">#254</a>)</li>
-<li>The REPL: no <code>%</code> marker after output without a newline, Jupyter cell numbers that match <code>In [N]</code>, <code>:save</code> that loads back (<a href="https://github.com/rok-lang/rok/issues/222">#222</a>, <a href="https://github.com/rok-lang/rok/issues/224">#224</a>, <a href="https://github.com/rok-lang/rok/issues/229">#229</a>)</li>
-<li>Index and key panics that name the value, ROKON fixes, a per-case timeout for the corpus, current release docs (<a href="https://github.com/rok-lang/rok/issues/251">#251</a>, <a href="https://github.com/rok-lang/rok/issues/226">#226</a>, <a href="https://github.com/rok-lang/rok/issues/227">#227</a>, <a href="https://github.com/rok-lang/rok/issues/225">#225</a>)</li>
-</ul>
-<a class="rm-link" href="https://github.com/rok-lang/rok/milestone/5">Milestone 0.1.5</a>
-</section>
-</div>
-
-## Next
-
-<div class="rm">
-<section class="rm-card next">
-<header><span class="rm-ver">0.2.0</span><span class="rm-pill next">Next</span></header>
+<header><span class="rm-ver">0.2.0</span><span class="rm-pill now">In progress</span></header>
 <h3>First breaking release</h3>
 <ul>
 <li>Safety: guard escapes, double release through <code>using</code>, unsafe FFI entry points (<a href="https://github.com/rok-lang/rok/issues/104">#104</a> to <a href="https://github.com/rok-lang/rok/issues/109">#109</a>)</li>
@@ -37,11 +19,11 @@
 </section>
 </div>
 
-## Later
+## Next
 
 <div class="rm">
-<section class="rm-card later">
-<header><span class="rm-ver">0.2.1</span><span class="rm-pill later">Later</span></header>
+<section class="rm-card next">
+<header><span class="rm-ver">0.2.1</span><span class="rm-pill next">Next</span></header>
 <h3>Variadic functions</h3>
 <ul>
 <li><code>...T</code> and <code>...any</code> parameters, list and tuple spreads (<a href="https://github.com/rok-lang/rok/issues/4">#4</a>)</li>
@@ -49,6 +31,11 @@
 </ul>
 <a class="rm-link" href="https://github.com/rok-lang/rok/milestone/4">Milestone 0.2.1</a>
 </section>
+</div>
+
+## Later
+
+<div class="rm">
 <section class="rm-card later">
 <header><span class="rm-ver">0.2.2</span><span class="rm-pill later">Later</span></header>
 <h3>A backend interface</h3>
@@ -80,6 +67,7 @@
 ## Shipped
 
 <div class="rm-log">
+<div class="rm-entry"><span class="rm-ver">0.1.5</span><time datetime="2026-10-31">2026-10-31</time><p>Polish: coloured output with help for each command and a "did you mean" for typos; errors that say what to write, with the value underlined and short type names; build output that says what happened, and commands outside a package that no longer run silently; a language server that reaches the standard library, with quick fixes and signature help; REPL and Jupyter fixes; index and key panics that name the value. <a href="https://github.com/rok-lang/rok/releases/tag/v0.1.5">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.4</span><time datetime="2026-10-29">2026-10-29</time><p>A better REPL: a <code>&gt;&gt;&gt;</code> prompt with the toolchain line, values in full and <code>it</code>, cell locations in errors, session commands, colours, completion, paste and history search; Jupyter streams output and asks for input. The installer sets up PATH and shell completion; the last statement before <code>}</code> may omit its <code>;</code>. <a href="https://github.com/rok-lang/rok/releases/tag/v0.1.4">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.3</span><time datetime="2026-10-29">2026-10-29</time><p>A larger standard library: hex and base64 encoding, more <code>str</code> splitting, iterator adapters such as <code>take_while</code>, <code>scan</code>, <code>chunks</code> and <code>unzip</code>, matching methods across the collections, <code>Writer::write_display</code>, field and variant reflection through <code>Inspect</code>, <code>int</code> bit and byte methods. API pages mark what each release added. <a href="https://github.com/rok-lang/rok/releases/tag/v0.1.3">Release notes</a></p></div>
 <div class="rm-entry"><span class="rm-ver">0.1.2</span><time datetime="2026-10-28">2026-10-28</time><p>Install through Nix; package metadata in <code>rok.rokon</code>; collection traits and methods, <code>Iterator::exact_len</code>; clearer errors and fixes from the 0.1.1 spec audit. <a href="https://github.com/rok-lang/rok/releases/tag/v0.1.2">Release notes</a></p></div>

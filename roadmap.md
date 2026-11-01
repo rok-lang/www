@@ -42,7 +42,6 @@
 <ul>
 <li>One documented boundary from rok-mir to code generation, so LLVM, the native backend and a future one plug in the same way (<a href="https://github.com/rok-lang/rok/issues/199">#199</a>, <a href="https://github.com/rok-lang/rok/issues/200">#200</a>)</li>
 <li>Every backend checked against the corpus through it (<a href="https://github.com/rok-lang/rok/issues/201">#201</a>)</li>
-<li>The front end splits out the same way, so the language server builds for wasm and runs in the browser (<a href="https://github.com/rok-lang/rok/issues/259">#259</a>)</li>
 </ul>
 <a class="rm-link" href="https://github.com/rok-lang/rok/milestone/8">Milestone 0.2.2</a>
 </section>
